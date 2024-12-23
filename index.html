@@ -1,0 +1,538 @@
+<meta http-equiv="Cache-Control" content="max-age=86400" />
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Evaluating mathematical reasoning of foundation models in visual contexts">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEAS: Self-Evolving Adversarial Safety Optimization for Large Language Models</title>
+
+
+  <link rel="icon" href="./static/images/seas-logo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+ <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+
+  <script src="./static/js/leaderboard_testmini.js"></script>  
+  <script src="./data/results/output_folders.js" defer></script>
+  <script src="./data/results/model_scores.js" defer></script>
+
+  <script src="./visualizer/data/data_public.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+   
+            </h1>
+          
+            <div style="position: relative; text-align: center; margin-bottom: 10px;">
+              <!-- 左侧 Logo -->
+              <img src="static/images/seas-logo.png" 
+                   style="position: absolute; left: 16%; top: 50%; transform: translateY(-50%); width: 4em;" 
+                   alt="Logo" />
+              
+              <!-- 第一行居中文本 -->
+              <h2 class="subtitle is-3 publication-subtitle" style="margin: 0; display: inline-block; font-size: 1.8em;">
+                  SEAS: Self-Evolving Adversarial Safety
+              </h2>
+          </div>
+          <!-- 第二行居中文本 -->
+          <h2 class="subtitle is-3 publication-subtitle" style="margin: 0; text-align: center; font-weight: 400; font-size: 1.8em;">
+              Optimization for Large Language Models
+          </h2>
+
+
+            <!-- 作者部分 -->
+          <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
+            <span class="author-block">Muxi Diao<sup style="color:#1a4ebf;">1</sup><sup></sup>,</span>
+            <span class="author-block">Rumei Li<sup style="color:#F6A800;">2</sup><sup></sup>,</span>
+            <span class="author-block">Shiyang Liu<sup style="color:#F6A800;">2</sup><sup></sup>,</span>
+<!--             <span class="author-block"><a href="https://scholar.google.com/citations?user=x1EPTHAAAAAJ&hl=en" target="_blank">Longze Chen</a><sup style="color:#33ffd6;">1</sup><sup>,</sup><sup style="color:#9400D3">2</sup></sup><sup>*</sup>,</span> -->
+            <span class="author-block">Guogang Liao<sup style="color:#F6A800;">2</sup><sup></sup>,</span>
+            <span class="author-block">Jingang Wang<sup style="color:#F6A800;">2</sup><sup></sup>,</span>
+            <span class="author-block">Xunliang Cai<sup style="color:#F6A800;">2</sup><sup></sup>,</span>
+            <span class="author-block">Weiran Xu<sup style="color:#1a4ebf;">1</sup></sup>
+           
+        </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup style="color:#1a4ebf">1</sup>Beijing University of Posts and Telecommunications</span><br>
+            <span class="author-block"><sup style="color:#F6A800">2</sup>Meituan</span>
+            
+            <!-- <span class="author-block">*</sup>Corresponding Author.</span> -->
+
+          </div>
+        
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <!-- @PAN TODO: change links -->
+                <a href="https://arxiv.org/pdf/2408.02632"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2406.08587"
+                   class="external-link button is-normal is-rounded is-dark">
+                
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/LeonDiao0427/SEAS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code & Dataset</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://seas-llm.github.io/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>Dataset (Coming soon)</span>
+                </a>
+              </span>
+              
+              <!-- Leaderboard Link. -->
+              <!-- <span class="link-block">
+                <a href="https://csbench.github.io/#leaderboard"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <p style="font-size:18px">🏆</p>
+                  </span>
+                  <span>Leaderboard</span>
+                </a>
+              </span> -->
+              
+              <!-- </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-top: -100px; margin-bottom: -100px;"></div>
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- <div class="container" style="margin-top: -150px; margin-bottom: -100px;"></div> -->
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            As Large Language Models (LLMs) continue to advance in capability and influence, ensuring their safety and preventing harmful outputs has become crucial. A promising approach to address these concerns involves training models to automatically generate adversarial prompts for red teaming. However, the evolving subtlety of vulnerabilities in LLMs challenges the effectiveness of current adversarial methods, which struggle to generate diverse, complex prompts and dynamically explore the weaknesses of these models. 
+            <br><br>
+            To tackle these challenges, we introduce the <span class="csbench">S</span>elf-<span class="csbench">E</span>volving <span class="csbench">A</span>dversarial <span class="csbench">S</span>afety (<span class="csbench">SEAS</span>) optimization framework, which includes both a SEAS dataset and a SEAS pipeline. The SEAS dataset comprises complex adversarial prompts, while the SEAS pipeline operates through three stages: Initialization, Attack, and Adversarial Optimization. This framework generates a diverse range of adversarial prompts and dynamically explores the model's vulnerabilities to enhance its safety. Our contributions include a novel adversarial framework, a comprehensive safety dataset, and empirical evidence demonstrating the effectiveness of SEAS. After three iterations, the model achieves a safety level comparable to GPT-4.
+            <br><br>
+            <span style="color: red; display: block; text-align: center;font-weight: bold;">🚨‼️‼️ Warning: this paper includes examples that may be offensive or harmful.</span>
+          </p>
+
+          
+      </div>
+      
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+
+
+<section class="section">
+  <div class="container" style="margin-top: -170px; margin-bottom: -100px;">
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/seas-pipeline.png" alt="geometric reasoning" style="width:84%; height:360px; object-fit: contain;"/>
+              <p style="font-size: 1.6em;"> Pipeline of  
+                <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS.</span>
+            </p>
+            </div>
+          </div>
+          <!-- <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/leaderboard.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+              <p> The leaderboard of LLMs on
+                <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS</span>  (EN).
+              </p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/main_radir_00.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+              <p> Comparison of representative LLMs' scores across different domains and tasks on 
+                <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS</span>  (EN). -->
+              
+              </p>
+            </div>
+          </div>
+        <!-- </div> -->
+      </div>
+    </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+     <h1 class="title is-1 csbench">
+    <img src="static/images/seas-logo.png" style="width:1.5em;vertical-align: middle" alt="Logo"/>
+                          <span class="csbench" style="width:1.5em;vertical-align: middle">SEAS Framework</span>
+  </h1>
+  </div>
+</section>
+
+
+
+
+<div class="columns is-centered has-text-centered" style="width: 1200px; margin: 0 auto;">
+  <!-- 左侧部分，占30% -->
+  <div class="column is-3">
+    <img src="static/images/stage1.png" alt="Initialization Stage" style="width: 100%; object-fit: contain;"/>
+  </div>
+  
+  <!-- 右侧部分，占70% -->
+  <div class="column is-9">
+    <div style="width: 100%; margin: 0 auto; text-align: justify;">
+      <h2 class="title is-3" style="margin-top: 40px">Initialization Stage</h2>
+      <p>
+        For the <span style="color: red; font-weight: bold;">Red Team model</span>🗡️, we expect it to generate complex and diverse adversarial prompts. To achieve this, we adopted an initialization scheme based on random sample contexts. The specific procedure is as follows: we randomly designate a specific type and select a fixed number of data from the training set of the SEAS dataset that corresponds to this type. These data are used as a small set of sample examples, incorporated into the prompts for Supervised Fine-Tuning (SFT) input. Then, we randomly select another sample of the same type as the output.
+      </p>
+      <p>
+        For the <span style="color: blue; font-weight: bold;">Target model</span>🛡️, considering that Instruct version models already have strong safety capabilities, we have initialized a Target model based on the base version, which does not have additional safety training, to better validate the effectiveness of our method. We selected three datasets specifically designed for SFT focused on fine-tuning general instructions. Our objective is to enhance the model’s capability for instruction following and to respond appropriately to inputs.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="columns is-centered has-text-centered" style="width: 1200px; margin: 0 auto;">
+  <!-- 左侧部分：文本 -->
+  <div class="column is-9">
+    <div style="width: 100%; margin: 0 auto; text-align: justify;">
+      <h2 class="title is-3" style="margin-top: 40px">Attack Stage</h2>
+      <div class="content has-text-justified">
+        <p>
+          At the beginning of each Attack Stage, we construct seed prompts by specifying a type and concatenating a fixed number (\( k \)) of prompts from the SEAS dataset's training set. This activates the <span style="color: red; font-weight: bold;">Red Team model</span>🗡️ to generate adversarial prompts. In order to ensure the diversity of the <span style="color: red; font-weight: bold;">Red Team model</span>🗡️'s output, we adopted nucleus sampling and carried out multiple samplings to generate \( n \) prompts. Following this, we input these prompts to the <span style="color: blue; font-weight: bold;">Target model</span>🛡️, also conducting nucleus sampling and multiple samplings, to obtain \( m \) output responses.
+        </p>
+        <p>
+          By concatenating \( n \) adversarial prompts with \( m \) responses and processing them through a Safe Classifier for safety evaluation, we obtain \( n \times m \) tuples of {\(seed\) \(prompt\), \(adversarial\) \(prompt\), \(response\), \( label \)}, where <code>label = 1</code> represents unsafe. Please note that the safety assessment specifically pertains to the response.
+        </p>
+      </div>
+      
+      <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+      </script>
+      
+    </div>
+  </div>
+
+  <!-- 右侧部分：图片 -->
+  <div class="column is-3">
+    <img src="static/images/stage2.png" alt="Initialization Stage" style="width: 100%; object-fit: contain;"/>
+  </div>
+</div>
+
+<div class="columns is-centered has-text-centered" style="width: 1200px; margin: 0 auto;">
+  <!-- 左侧部分，占30% -->
+  <div class="column is-3">
+    <img src="static/images/stage3.png" alt="Initialization Stage" style="width: 100%; object-fit: contain;"/>
+  </div>
+  
+  <!-- 右侧部分，占70% -->
+  <div class="column is-9">
+    <div style="width: 100%; margin: 0 auto; text-align: justify;">
+      <h2 class="title is-3" style="margin-top: 40px">Adversarial Optimization Stage</h2>
+      <p>
+        In the Adversarial Optimization Stage, we filter and construct data pairs for optimization. Here, we use Direct Preference Optimization (DPO) loss. 
+      </p>
+      <p>
+        For the <span style="color: red; font-weight: bold;">Red Team model</span>🗡️, we use the seed prompt as input, treating the adversarial prompt that triggers harmful response as the chosen output, and the one that doesn't trigger such response as the rejected output. 
+      </p>
+      <p>
+        For the <span style="color: blue; font-weight: bold;">Target model</span>🛡️, we use the adversarial prompt as input, treating the safe response as the chosen output and the harmful response as the rejected output. 
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- dataset -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+     <h1 class="title is-1 csbench">
+    <img src="static/images/seas-logo.png" style="width:1.5em;vertical-align: middle" alt="Logo"/>
+                          <span class="csbench" style="width:1.5em;vertical-align: middle">SEAS Dataset</span>
+  </h1>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
+        <h2 class="title is-3" id="leaderboard">Distribution of <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="csbench">SEAS Dataset</span> </h2>
+        
+<section class="section">
+  <div class="container" style="margin-top: -120px; margin-bottom: -100px;">
+    <div class="columns is-centered m-6">
+      <div class="column is-full has-text-centered content">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/distribution_of_SEAS.png" alt="geometric reasoning" style="width:84%; height:400px; object-fit: contain;"/>
+              <p> Distribution of
+                <img src="static/images/seas-logo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS</span>  Train.
+              </p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/train-2.png" alt="geometric reasoning" style="width:84%; height:400px; object-fit: contain;"/>
+              <p> Distribution of
+                <img src="static/images/seas-logo.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS</span>  Train.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+        <h2 class="title is-3" id="leaderboard">Case Study on <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+          <span class="csbench">SEAS</span> </h2>
+          <section class="section">
+            <div class="container" style="margin-top: -120px; margin-bottom: -100px;">
+              <div class="columns is-centered m-6">
+                <div class="column is-full has-text-centered content">
+                  <div id="results-carousel" class="carousel results-carousel">
+                    <div class="box m-5">
+                      <div class="content has-text-centered">
+                        <img src="static/images/case1.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+                        <p> Examples of Risk Categories and Attack Styles on 
+                          <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                          <span class="csbench">SEAS</span>  (Masked Sensitive Terms).
+                        <!-- across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. <b class="best-score-text" style="color: #C6011F"> The scores of Gemini Ultra are from the Gemini Team, Google.</b> -->
+                        </p>
+                      </div>
+                    </div>
+                    <div class="box m-5">
+                      <div class="content has-text-centered">
+                        <img src="static/images/case2.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+                        <p> Examples of Harmless set on
+                          <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                          <span class="csbench">SEAS</span> 
+                        <!-- across mathematical reasoning and visual context types. PoT refers to program-of-thought prompting, and PoT GPT-4 is a textual LLM augmented with the caption and OCR text. GPT-4V is manually evaluated via the playground chatbot. <b class="best-score-text" style="color: #C6011F"> The scores of Gemini Ultra are from the Gemini Team, Google.</b> -->
+                        </p>
+                      </div>
+                    </div>
+                   
+                    </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- result -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+     <h1 class="title is-1 csbench">
+    <img src="static/images/seas-logo.png" style="width:1.5em;vertical-align: middle" alt="Logo"/>
+                          <span class="csbench" style="width:1.5em;vertical-align: middle">Experiment Results</span>
+  </h1>
+  </div>
+</section>
+
+
+            
+
+
+        
+<section class="section">
+  <div class="container" style="margin-top: -60px; margin-bottom: -100px;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full has-text-centered content">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/Table1.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+              <!-- <p style="margin-top: -20px;"> The performance of LLMs at different parameter scales(Left).
+                <br>The scale-score fitting curve of Qwen1.5 and Llama2 series(Right).
+                </p> -->
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/Table2.png" alt="geometric reasoning" style="width:84%; height:400px; object-fit: contain;margin-top: 60px"/>
+              <!-- <p style="margin-top: 20px"> Comparison of models under different settings.
+                </p> -->
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/Table3.png" alt="geometric reasoning" style="width:84%; height:350px; object-fit: contain;"/>
+              <!-- <p style="margin-top: 20px;margin-bottom: 10px"> The proportion of different error types varies by models for multiple-choice questions.
+              
+              </p> -->
+            </div>
+          </div>
+<!-- 
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/cn&en.png" alt="geometric reasoning" style="width:100%; height:400px; object-fit: contain;"/>
+              <p> Comparison of models in different languages on SEAS.
+              
+              </p>
+            </div>
+          </div>
+
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/main_code_math_cs.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+              <p> The score changes on SEAS as LLM's Math/Code score increases.<br> &#x1D4AB; denotes Pearson correlation coefficient.
+               </p>
+            </div>
+          </div> -->
+
+          <!-- <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/result_2table.png" alt="geometric reasoning" style="width:84%; height:500px; object-fit: contain;"/>
+              <p> The performance of code- and math-specific expert LLMs on  
+                <img src="static/images/seas-logo.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+                <span class="csbench">SEAS</span> 
+             
+              </p>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+</section>
+<!-- @PAN TODO: bibtex -->
+ 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre class="has-text-left"><code>
+      @article{diao2024seas,
+        title={SEAS: Self-Evolving Adversarial Safety Optimization for Large Language Models},
+        author={Diao, Muxi and Li, Rumei and Liu, Shiyang and Liao, Guogang and Wang, Jingang and Cai, Xunliang and Xu, Weiran},
+        journal={arXiv preprint arXiv:2408.02632},
+        year={2024}
+      }
+    </code></pre>
+  </div>
+</section>
+
+<section>
+  <div class="section" id="org-banners" style="display:flex">
+    <a href="https://www.bupt.edu.cn/" target="_blank" rel="external">
+        <img class="center-block org-banner" src="static/images/BUPT.png">
+    </a>
+    <a href="https://pris-nlp.github.io/" target="_blank" rel="external">
+      <img class="center-block org-banner" src="static/images/PRIS.png">
+  </a>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+  <!-- <div class="container"> -->
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is website adapted from <a href="https://csbench.github.io/">SEAS</a>, <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://csbench.github.io/">MathVista</a>, licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</footer>
+
+</body>
+</html>

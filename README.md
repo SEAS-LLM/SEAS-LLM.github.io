@@ -1,5 +1,6 @@
-# SEAS: Self-Evolving Adversarial Safety Optimization for Large Language Models
+# SEAS
 
-Welcome to the official website for SEAS, a framework for enhancing the safety and robustness of large language models through self-evolving adversarial optimization. This repository hosts the public-facing website, project updates, and related resources.
+This website is adapted from [CS-bench website](https://csbench.github.io), [Nerfies website](https://nerfies.github.io) and [MathVista website](https://mathvista.github.io)
 
-We will improve the website as soon as possible.
+# Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
